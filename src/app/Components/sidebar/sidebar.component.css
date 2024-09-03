@@ -1,0 +1,153 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    width: 3.5rem;
+    height: 100%;
+    background-color: white;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0;
+    padding-right: 10px;
+    border-radius: 1%;
+}
+
+.sidebar:hover {
+    width: 16rem;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 16rem;
+    }
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.flex-grow {
+    flex-grow: 1; /* This makes the content area grow to fill the available space */
+}
+
+.custom-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    flex-grow: 1; /* Ensures the list grows to fill the remaining space */
+}
+
+
+
+
+
+
+
+
+.nav-link {
+    color: #1d2736;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2.75rem;
+    text-decoration: none;
+    padding-right: 1.5rem;
+    border-right: 3px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    direction: rtl;
+}
+
+.nav-link:hover {
+    color: #81B622;
+    border-right-color: #81B622;
+}
+
+.nav-link:focus {
+    outline: none;
+}
+
+.icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.nav-text {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.025em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.25rem;
+    height: 2rem;
+    direction: rtl;
+}
+
+.settings-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #9ca3af;
+    text-transform: uppercase;
+}
+
+.round {
+    border: 2px solid #9ca3af;
+    border-radius: 50%;
+    padding: 4px;
+    height: 3rem;
+}
+
+.footer {
+    padding: 1rem;
+    border-top: 1px solid #e0e0e0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    
+}
+.logo-img {
+    width: 4rem; /* Set the fixed width */
+    height: 4rem; /* Set the fixed height */
+    display: block; /* Ensures the image is displayed as a block */
+    
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    direction: rtl;
+    padding: 20px 0;
+    
+
+
+}
+
+.profile-text h2 {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    font-weight: bold; /* Equivalent to font-bold */
+    padding-right: 20px;
+}
+
+.profile-text p {
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    color: #6b7280; /* Equivalent to text-gray-500 */
+    padding-right: 20px;
+
+}

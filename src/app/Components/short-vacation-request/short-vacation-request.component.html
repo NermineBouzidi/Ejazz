@@ -1,0 +1,59 @@
+<div class="form-container">
+  <div class="form-card">
+    <div class="form-header">
+      <img src="assets/logo.png" alt="Company Logo" class="form-logo" />
+      <h2>طلب إجازة قصيرة</h2>
+    </div>
+
+    <div class="form-field">
+      <label for="employeeName">اسم الموظف</label>
+      <span class="p-input-icon-left">
+        <i class="pi pi-user"></i>
+        <input id="employeeName" type="text" placeholder="أدخل اسم الموظف" />
+      </span>
+    </div>
+
+    <div class="form-field">
+      <label for="department">الادارة التي ينتمي اليها</label>
+      <select id="department" [(ngModel)]="selectedDepartment">
+        <option *ngFor="let department of departments" [value]="department.code">
+          {{ department.name }}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label for="vacationDuration">مدة الاجازة</label>
+      <span class="p-input-icon-left">
+        <i class="pi pi-clock"></i>
+        <input id="vacationDuration" type="number" placeholder="أدخل مدة الاجازة" />
+      </span>
+    </div>
+
+    <div class="form-field">
+      <label for="vacationStartDate">التاريخ بدء الاجازة</label>
+      <input id="vacationStartDate" type="date" [(ngModel)]="vacationStartDate" placeholder="أدخل تاريخ البدء">
+    </div>
+
+    <div class="form-field">
+      <label for="vacationPurpose">الغرض من الحصول على الاجازة</label>
+      <textarea id="vacationPurpose" placeholder="أدخل الغرض" rows="3"></textarea>
+    </div>
+
+    <div class="form-field">
+      <label for="remainingBalance">الرصيد المتبقي</label>
+      <span class="p-input-icon-left">
+        <i class="pi pi-wallet"></i>
+        <input id="remainingBalance" type="number" placeholder="أدخل الرصيد المتبقي" />
+      </span>
+    </div>
+
+    <div class="form-actions">
+      <button type="button" class="p-button-rounded p-button-outlined p-button-success">إرسال</button>
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer">
+  This Platform is created by Ejaz Company, &copy; <a href="https://www.ejaz.com">Ejaz.com</a>
+</footer>
